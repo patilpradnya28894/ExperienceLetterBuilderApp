@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PersonalDetailActivity">
+
+    <TextView
+        android:id="@+id/textEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Personal Details"
+        android:textSize="25dp"
+        android:padding="30dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/textEmployeeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Name"
+        android:textSize="18dp"
+        android:layout_below="@id/textEmployee"/>
+
+    <EditText
+        android:id="@+id/editEmployeeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Emp Name"
+        android:layout_below="@id/textEmployeeName"/>
+
+    <TextView
+        android:id="@+id/textEmployeeAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Address"
+        android:textSize="18dp"
+        android:layout_below="@id/editEmployeeName"/>
+
+    <EditText
+        android:id="@+id/editEmployeeAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Emp Address"
+        android:layout_below="@id/textEmployeeAddress"/>
+
+    <TextView
+        android:id="@+id/textEmployeeContactNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Contact No"
+        android:textSize="18dp"
+        android:layout_below="@id/editEmployeeAddress"/>
+
+    <EditText
+        android:id="@+id/editEmployeeContactNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Emp Contact No"
+        android:layout_below="@id/textEmployeeContactNo"/>
+    <TextView
+        android:id="@+id/textemployeeEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Email"
+        android:textSize="18dp"
+        android:layout_below="@id/editEmployeeContactNo"/>
+
+    <EditText
+        android:id="@+id/editEmployeeEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Emp Email"
+        android:layout_below="@id/textemployeeEmail"/>
+
+    <Button
+        android:id="@+id/nextBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onNext2"
+        android:text="Next"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editEmployeeEmail"/>
+
+    <Button
+        android:id="@+id/saveBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSave2"
+        android:text="save"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/editEmployeeEmail"/>
+</RelativeLayout>

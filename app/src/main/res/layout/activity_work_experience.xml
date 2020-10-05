@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Activity.WorkExperienceActivity">
+
+    <TextView
+        android:id="@+id/textExperianceTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Work Experience"
+        android:textSize="40dp"
+        android:padding="30dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/textDesignation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Designation"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:layout_below="@id/textExperianceTitle"/>
+
+    <EditText
+        android:id="@+id/editDesignation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee Designation"
+        android:layout_below="@id/textDesignation" />
+
+    <TextView
+        android:id="@+id/textDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Department"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:layout_below="@id/editDesignation"/>
+
+    <EditText
+        android:id="@+id/editDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee Department"
+        android:layout_below="@id/textDepartment" />
+
+    <TextView
+        android:id="@+id/textJoinDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join Date"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:layout_below="@id/editDepartment"/>
+    <EditText
+        android:id="@+id/editJoinDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Join Date"
+        android:layout_below="@id/textJoinDate" />
+
+    <TextView
+        android:id="@+id/textAuthorisation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Authorised Person: "
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:padding="30dp"
+        android:layout_below="@id/editJoinDate"/>
+
+    <TextView
+        android:id="@+id/textSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signature"
+        android:paddingTop="15dp"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:layout_below="@id/textAuthorisation"/>
+
+   <Button
+       android:id="@+id/browseSign"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Browse"
+       android:onClick="onBrowseSign"
+       android:layout_below="@id/textAuthorisation"
+       android:layout_toRightOf="@+id/textSign"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageView"
+        android:layout_below="@id/textAuthorisation"
+        android:layout_toRightOf="@+id/browseSign"/>
+
+    <TextView
+        android:id="@+id/textStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stamp"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:paddingTop="20dp"
+        android:layout_below="@id/textSign"/>
+    <Button
+        android:id="@+id/browseStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Browse"
+        android:onClick="onBrowseStamp"
+        android:layout_below="@id/browseSign"
+        android:layout_toRightOf="@+id/textStamp"
+        android:layout_alignLeft="@id/browseSign"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageView2"
+        android:layout_below="@id/imageView"
+        android:layout_toRightOf="@+id/browseStamp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="createPDF"
+        android:id="@+id/finishBtn"
+        android:text="Finish"
+        android:layout_below="@id/imageView2"
+        android:layout_alignParentRight="true"/>
+
+
+
+
+
+</RelativeLayout>

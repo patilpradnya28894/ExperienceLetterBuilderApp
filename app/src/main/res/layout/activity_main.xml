@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Activity.MainActivity">
+
+
+
+   <TextView
+       android:id="@+id/textCompanyTitle"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Company Details"
+       android:textSize="40dp"
+       android:padding="30dp"
+       android:layout_alignParentTop="true"/>
+
+
+   <TextView
+       android:id="@+id/textCompanyName"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Company Name"
+       android:textColor="@android:color/black"
+       android:textSize="18dp"
+       android:layout_below="@id/textCompanyTitle"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editCompanyName"
+        android:hint="Enter Company Name"
+        android:layout_below="@id/textCompanyName" />
+
+      <TextView
+          android:id="@+id/textLogo"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Logo"
+          android:textSize="18dp"
+          android:paddingTop="13dp"
+          android:textColor="@android:color/black"
+          android:layout_below="@id/editCompanyName" />
+
+       <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/browseBtn"
+          android:text="Browse"
+          android:onClick="onBrowse"
+           android:layout_below="@id/editCompanyName"
+           android:layout_toRightOf="@+id/textLogo"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/logoImage"
+        android:layout_below="@id/editCompanyName"
+        android:layout_toRightOf="@+id/browseBtn"/>
+
+    <TextView
+        android:id="@+id/textSlogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Slogan"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+
+        android:layout_below="@id/browseBtn"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editSlogan"
+        android:hint="Enter Company Slogan"
+        android:layout_below="@id/textSlogan"/>
+
+    <TextView
+        android:id="@+id/textContactDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Details: "
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:padding="30dp"
+        android:layout_below="@id/editSlogan"/>
+
+    <TextView
+        android:id="@+id/textWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Website"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:layout_below="@id/textContactDetails"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editWebsite"
+        android:hint="Enter Company Website"
+        android:layout_below="@id/textWeb"/>
+
+
+    <TextView
+        android:id="@+id/textEmailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email ID"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:layout_below="@id/editWebsite"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editEmail"
+        android:hint="Enter Company Email"
+        android:layout_below="@id/textEmailID"/>
+    <TextView
+        android:id="@+id/textContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact No."
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:layout_below="@id/editEmail"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editContactNo"
+        android:hint="Enter Contact No."
+        android:layout_below="@id/textContact"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onNext1"
+        android:id="@+id/nextBtn1"
+        android:text="Next"
+        android:layout_below="@id/editContactNo"
+        android:layout_alignParentRight="true"/>
+ <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:onClick="onSave"
+     android:id="@+id/save"
+     android:text="Save"
+     android:layout_below="@id/editContactNo"
+     android:layout_alignParentLeft="true"/>
+
+
+
+
+
+</RelativeLayout>
